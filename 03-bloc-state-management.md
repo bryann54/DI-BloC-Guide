@@ -1,4 +1,4 @@
-# 🎭 BLoC State Management
+# BLoC State Management
 
 ## What is BLoC?
 
@@ -9,7 +9,7 @@ Think of it as a manager that:
 2. Processes them (business logic)
 3. Outputs **States** (UI updates)
 
-## 🎨 The BLoC Flow
+## The BLoC Flow
 
 ```
 ┌──────────────┐
@@ -35,7 +35,7 @@ Think of it as a manager that:
 └──────────────┘
 ```
 
-## Real-World Analogy 🏪
+## Real-World Analogy 
 
 Imagine a coffee shop:
 
@@ -386,7 +386,7 @@ BlocConsumer<HotelsBloc, HotelsState>(
 )
 ```
 
-## 🎯 Best Practices
+## Best Practices
 
 ### 1. Keep BLoC Pure
 ```dart
@@ -450,7 +450,7 @@ HotelsBloc() : super(HotelsInitial()) {
 }
 ```
 
-## 📊 State Management Patterns
+## State Management Patterns
 
 ### Pattern 1: Loading → Success/Error
 ```dart
@@ -495,7 +495,7 @@ result.fold(
 );
 ```
 
-## 🔍 Debugging BLoCs
+## Debugging BLoCs
 
 ### BLoC Observer
 
@@ -534,7 +534,7 @@ void main() {
 }
 ```
 
-## 🎓 Quiz Time!
+## Quiz Time!
 
 **Q1:** What's the difference between BlocBuilder and BlocListener?
 <details>
@@ -562,11 +562,11 @@ So BLoC can compare events and states by their values, not by object reference. 
 
 Now you understand BLoC! Let's see how it fits into the complete Clean Architecture pattern.
 
-👉 [Continue to Clean Architecture](./04-clean-architecture.md)
+ [Continue to Clean Architecture](./04-clean-architecture.md)
 
 ---
 
-## 📚 Key Takeaways
+## Key Takeaways
 
 ✅ BLoC receives Events, processes logic, emits States  
 ✅ Use BlocBuilder for UI updates, BlocListener for side effects  
