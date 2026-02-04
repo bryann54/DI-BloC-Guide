@@ -1,4 +1,4 @@
-# 🌐 API Client Setup
+# API Client Setup
 
 ## The HTTP Stack
 
@@ -384,7 +384,7 @@ Future<Either<Failure, SearchResponse>> listHotels(query) async {
 }
 ```
 
-## 🔄 Complete Request Flow
+## Complete Request Flow
 
 Let's trace a GET request:
 
@@ -434,7 +434,7 @@ Let's trace a GET request:
    → Returns Right(entity)
 ```
 
-## 🎨 Visual Architecture
+## Visual Architecture
 
 ```
 ┌──────────────────────────────────────────┐
@@ -621,7 +621,7 @@ test('fetches hotels successfully', () async {
 });
 ```
 
-## 🎓 Quiz Time!
+## Quiz Time!
 
 **Q1:** Why use interceptors instead of adding logic directly in each request?
 <details>
@@ -648,11 +648,11 @@ It lets the Repository handle errors gracefully with Either<Failure, Success>. T
 
 Now you understand the full stack! Let's see everything working together in a complete feature.
 
-👉 [Continue to Complete Feature Flow](./06-complete-feature-flow.md)
+ [Continue to Complete Feature Flow](./06-complete-feature-flow.md)
 
 ---
 
-## 📚 Key Takeaways
+## Key Takeaways
 
 ✅ Environment variables keep secrets safe  
 ✅ Interceptors add functionality to all requests  
