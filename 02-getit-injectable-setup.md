@@ -1,4 +1,4 @@
-# 🔧 GetIt & Injectable Setup
+# GetIt & Injectable Setup
 
 ## What Are These Tools?
 
@@ -8,7 +8,7 @@ A **service locator** - think of it as a smart box where you store all your app'
 ### Injectable
 A **code generator** - it automatically writes the boring setup code for GetIt, so you don't have to!
 
-## 🎨 The Big Picture
+## The Big Picture
 
 ```
 ┌────────────────────────────────────────────────┐
@@ -44,9 +44,9 @@ A **code generator** - it automatically writes the boring setup code for GetIt, 
 ```dart
 import 'package:get_it/get_it.dart';
 import 'package:injectable/injectable.dart';
-import 'package:buenro_hotels/core/di/injector.config.dart';
+import 'package:hotels/core/di/injector.config.dart';
 
-// This is our magic box! 📦
+// This is our magic box! 
 final getIt = GetIt.instance;
 
 @InjectableInit(
@@ -256,7 +256,7 @@ class HotelsBloc extends Bloc<HotelsEvent, HotelsState> {
 }
 ```
 
-## 🔄 Visual Dependency Graph
+## Visual Dependency Graph
 
 ```
                     App Starts
@@ -316,7 +316,7 @@ void main() async {
   // Load environment variables
   await dotenv.load(fileName: "env/.dev.env");
   
-  // Configure all dependencies! 🎉
+  // Configure all dependencies! 
   await configureDependencies();
   
   runApp(MyApp());
@@ -376,7 +376,7 @@ flutter pub run build_runner build --delete-conflicting-outputs
 
 This creates `injector.config.dart` with all the registration code!
 
-## 🎯 Common Patterns in Your Project
+## Common Patterns in Your Project
 
 ### Pattern 1: Named Dependencies
 ```dart
@@ -408,7 +408,7 @@ Future<SharedPreferences> prefs() async =>
     await SharedPreferences.getInstance();
 ```
 
-## 🐛 Common Issues
+## Common Issues
 
 ### Issue 1: "Type not registered"
 ```dart
@@ -448,7 +448,7 @@ class RegisterModules { }
 abstract class RegisterModules { }
 ```
 
-## 📝 Quick Reference
+## Quick Reference
 
 | Annotation | Lifecycle | Use Case |
 |------------|-----------|----------|
@@ -462,11 +462,11 @@ abstract class RegisterModules { }
 
 Now you understand how dependencies are registered and provided. Let's see how **BLoC** uses these dependencies for state management!
 
-👉 [Continue to BLoC State Management](./03-bloc-state-management.md)
+ [Continue to BLoC State Management](./03-bloc-state-management.md)
 
 ---
 
-## 🎓 Quick Quiz
+##  Quick Quiz
 
 **Q1:** What's the difference between `@injectable` and `@lazySingleton`?
 <details>
