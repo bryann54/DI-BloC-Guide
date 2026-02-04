@@ -1,4 +1,4 @@
-# 🏆 Best Practices & Common Patterns
+#  Best Practices & Common Patterns
 
 ## Project Structure
 
@@ -901,7 +901,7 @@ class ListHotelsSuccess extends Equatable {
 }
 ```
 
-## 🎓 Final Checklist
+##  Final Checklist
 
 Before pushing code, check:
 
@@ -943,7 +943,7 @@ Before pushing code, check:
 
 ---
 
-## 🎉 Congratulations!
+##  Congratulations!
 
 You now understand:
 - ✅ Dependency Injection with GetIt & Injectable
@@ -955,4 +955,4 @@ You now understand:
 
 Keep practicing these patterns, and soon they'll become second nature!
 
-Happy coding! 🚀
+Happy coding! 
