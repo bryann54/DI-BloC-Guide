@@ -1,10 +1,10 @@
-# 🎯 Understanding Dependency Injection
+#  Understanding Dependency Injection
 
 ## What is Dependency Injection?
 
 Think of it like this: Instead of a class creating its own tools, we **hand it the tools it needs**.
 
-### 🏠 Real-World Analogy
+### Real-World Analogy
 
 Imagine you're a chef:
 
@@ -38,7 +38,7 @@ class Chef {
 
 ## Why Do We Need This?
 
-### 1. **Easy Testing** 🧪
+### 1. **Easy Testing** 
 ```dart
 // Without DI - Hard to test!
 class UserService {
@@ -61,14 +61,14 @@ final fakeApi = FakeApiClient();
 final service = UserService(fakeApi); // Inject fake for testing
 ```
 
-### 2. **Flexibility** 🔄
+### 2. **Flexibility** 
 ```dart
 // Switch implementations easily
 final prodService = UserService(RealApiClient());
 final testService = UserService(MockApiClient());
 ```
 
-### 3. **Single Responsibility** 📦
+### 3. **Single Responsibility** 
 ```dart
 // Each class focuses on ONE job
 // Not responsible for creating its dependencies
@@ -120,7 +120,7 @@ final bloc = HotelsBloc(usecase, prefs);
 final bloc = getIt<HotelsBloc>(); // Container creates everything!
 ```
 
-## 🎨 Visual Flow
+## Visual Flow
 
 ```
 ┌─────────────────────────────────────┐
@@ -193,7 +193,7 @@ class SharedPreferencesManager { }
 class HotelsBloc { }
 ```
 
-## 🎯 Quiz Yourself!
+## Quiz Yourself!
 
 **Question 1:** Why don't we do `final api = ApiClient()` inside a class?
 <details>
@@ -218,11 +218,11 @@ It automatically creates objects and their dependencies, so you don't have to ma
 
 Now that you understand the "why" behind DI, let's see how **GetIt** and **Injectable** implement this in Flutter!
 
-👉 [Continue to GetIt & Injectable Setup](./02-getit-injectable-setup.md)
+ [Continue to GetIt & Injectable Setup](./02-getit-injectable-setup.md)
 
 ---
 
-## 📚 Key Takeaways
+## Key Takeaways
 
 ✅ DI means giving a class its dependencies instead of creating them inside  
 ✅ Makes testing easier because we can swap real objects with fake ones  
