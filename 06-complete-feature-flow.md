@@ -1,10 +1,10 @@
-# 🔄 Complete Feature Flow
+#  Complete Feature Flow
 
 ## The Hotels Feature: End-to-End
 
 Let's follow a complete request from button tap to UI update!
 
-## 🎬 The Journey of a Search Request
+##  The Journey of a Search Request
 
 ### Step-by-Step Breakdown
 
@@ -461,7 +461,7 @@ BlocBuilder<HotelsBloc, HotelsState>(
 
 ---
 
-## 🎨 Visual Timeline
+## Visual Timeline
 
 ```
 T=0ms
@@ -521,7 +521,7 @@ T=520ms  ▼
 └─────────────────────┘
 ```
 
-## 🔄 State Transition Diagram
+## State Transition Diagram
 
 ```
 ┌──────────────────┐
@@ -715,11 +715,11 @@ Still use layers! UseCase might be thin (just pass-through), but structure stays
 
 You've seen the complete flow! Now let's look at best practices and common patterns.
 
-👉 [Continue to Best Practices](./07-best-practices.md)
+ [Continue to Best Practices](./07-best-practices.md)
 
 ---
 
-## 📚 Key Takeaways
+## Key Takeaways
 
 ✅ Events flow down, States flow up  
 ✅ Each layer transforms data appropriately  
