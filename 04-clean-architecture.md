@@ -1,4 +1,4 @@
-# 🏗️ Clean Architecture
+#  Clean Architecture
 
 ## What is Clean Architecture?
 
@@ -10,7 +10,7 @@ Clean Architecture is a way to organize code so that:
 
 Think of it like a well-organized office building! 🏢
 
-## 🎨 The Layer Cake
+## The Layer Cake
 
 ```
 ┌─────────────────────────────────────────┐
@@ -30,7 +30,7 @@ Think of it like a well-organized office building! 🏢
 └─────────────────────────────────────────┘
 ```
 
-## The Dependency Rule 📜
+## The Dependency Rule 
 
 **Inner layers don't know about outer layers!**
 
@@ -362,7 +362,7 @@ Let's trace a user searching for hotels:
     BlocBuilder shows hotel list
 ```
 
-## 🎨 Visual Architecture
+## Visual Architecture
 
 ```
 ┌──────────────────────────────────────────────────────┐
@@ -416,7 +416,7 @@ Let's trace a user searching for hotels:
 
 ## Why This Architecture?
 
-### 1. Testability 🧪
+### 1. Testability 
 
 Each layer can be tested independently:
 
@@ -457,7 +457,7 @@ test('HotelsBloc emits success state', () {
 });
 ```
 
-### 2. Flexibility 🔄
+### 2. Flexibility 
 
 Easy to swap implementations:
 
@@ -475,7 +475,7 @@ class HotelsLocalRepositoryImpl implements HotelsRepository {
 }
 ```
 
-### 3. Separation of Concerns 📦
+### 3. Separation of Concerns 
 
 Each layer has clear responsibilities:
 
@@ -485,7 +485,7 @@ Each layer has clear responsibilities:
 | Domain | Business rules | Nothing (pure) |
 | Data | Data fetching/storage | Domain contracts |
 
-### 4. Maintainability 🔧
+### 4. Maintainability 
 
 Changes are isolated:
 
@@ -557,7 +557,7 @@ class HotelsBloc {
 }
 ```
 
-## 🎓 Quick Quiz
+##  Quick Quiz
 
 **Q1:** Which layer should never import widgets?
 <details>
@@ -581,11 +581,11 @@ No! Domain should be pure Dart with no external dependencies. Only Data layer ca
 
 Now you understand the architecture! Let's see how the API client is set up.
 
-👉 [Continue to API Client Setup](./05-api-client-setup.md)
+ [Continue to API Client Setup](./05-api-client-setup.md)
 
 ---
 
-## 📚 Key Takeaways
+##  Key Takeaways
 
 ✅ Three layers: Presentation → Domain ← Data  
 ✅ Inner layers don't know about outer layers  
